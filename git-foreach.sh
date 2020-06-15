@@ -6,6 +6,6 @@ if [[ -z $1 ]]; then
 fi
 
 for i in */; do
-  git -C $i status &> /dev/null &&  # проверка того, что это git-репозиторий
-  ( set -x; git -C $i $@ )  # выполнение команды с выводом этой команды
+  git -C $i status &> /dev/null &&
+  ( set -x; git -C $i $@ )
 done

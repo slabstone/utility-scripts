@@ -6,6 +6,6 @@ if [[ -z $1 ]]; then
 fi
 
 for i in */; do
-  svn info $i &> /dev/null &&  # проверка того, что это SVN-репозиторий
-  ( set -x; svn $@ $i )  # выполнение команды с выводом этой команды
+  svn info $i &> /dev/null &&
+  ( set -x; svn $@ $i )
 done

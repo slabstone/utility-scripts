@@ -13,4 +13,4 @@ if [[ -z $(git status --short) ]]; then
   exit 0
 fi
 
-git commit -m "нормализация символов конца строки"
+git commit -m "renormalize line endings"
